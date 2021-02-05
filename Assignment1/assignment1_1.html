@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/assignment1_1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Londrina+Solid&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Assignment1</title>
+</head>
+<body>
+    <div class="container">
+            <div class="navbar">
+                <div><p id="logo"><a href="../index.html">COMP125</a></p></div>
+                <ul>
+                    <li><a href="Assignment1/assignment1.html" target="blank" >Assignment1</a></li>
+                    <li><a href="#">Assignment2</a></li>
+                    <li><a href="#">Assignment3</a></li>
+                    <li><a href="#">Assignment4</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div>
+                    <button type="button" id="button1"><span></span><a href="../Assignment1/assignment1_1.html">METRIC BMR CALCULATOR</a></button>
+                    <button type="button" id="button2"><span></span><a href="../Assignment1/assignment1.html">BMR IMPERIAL CALCULATOR</a></button>   
+                </div>
+                <form action="">
+                    <fieldset>
+                        <p id="subText">
+                            METRIC BMR CALCULATOR
+                        </p><br><br>
+                        <p style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender:
+                            <select id="gender" name="gender" required>
+                                <option value="">-- Select Gender --</option>
+                                <option value="male">Male</option>
+                                <option value="femail">Female</option>
+                            </select>
+                        </p></br>
+                        <p style="font-weight: bold;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="Age">Age: <input type="Number" id="age" name="age" required/></label>
+                        </p></br>
+                        <p style="font-weight: bold;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="height">Height: <input type="Number" id="height" name="height" required/></label>
+                        </p></br>
+                        <p style="font-weight: bold;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="weight">Weight: <input type="Number" id="weight" name="weight" required/></label>
+                        </p></br>
+                        
+                        <div id="selectLevel">
+                            <p style="font-weight: bold;">select your activity level:</p><br>
+                            &nbsp;<input type="radio" id="level1" name="level" value="1.2"><label for="level1">&nbsp;I am sedentary (little or no exercise)</label><br>
+                            &nbsp;<input type="radio" id="level2" name="level" value="1.375"><label for="level2">&nbsp;I am lightly active (light exercise or sports 1-3 days per week)</label><br>
+                            &nbsp;<input type="radio" id="level3" name="level" value="1.55"><label for="level3">&nbsp;I am moderately active (moderate exercise or sports 3-5 days per week)</label><br>
+                            &nbsp;<input type="radio" id="level4" name="level" value="1.725"><label for="level4">&nbsp;I am very active (hard exercise or sports 6-7 days per week)</label><br>
+                            &nbsp;<input type="radio" id="level5" name="level" value="1.9"><label for="level5">&nbsp;I am super active(very hard exercise or sports and physical job or 2x training)</label><br>
+                        </div>
+                        </br></br>
+                        <div class="btnL">
+                            <input class="btn" type="reset" value="Reset">
+                            <input class="btn" id="submit" type="button" value="CalculateBMR">
+                        </div>
+                        <div>
+                            <p id="bmrLabel"></p>
+                        </div>
+                    </fieldset> 
+                </form>
+            </div>
+        <footer>
+            <h6>&reg; Copyright Centennial College COMP125 - Client-Side Web Development - Winter 2021 <br>
+                Jongsung, 301136370, COMP125005, Semester</h6>
+        </footer>
+    </div>
+    <script src="../js/assignment1.js"></script>
+</body>
+</html>
