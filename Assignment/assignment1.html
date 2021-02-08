@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/assignment1_1.css">
+    <link rel="stylesheet" href="../css/assignment1.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,7 +22,7 @@
             <div class="navbar">
                 <div><p id="logo"><a href="../index.html">COMP125</a></p></div>
                 <ul>
-                    <li><a href="Assignment1/assignment1.html" target="blank" >Assignment1</a></li>
+                    <li><a href="Assignment/assignment1.html" target="blank" >Assignment1</a></li>
                     <li><a href="#">Assignment2</a></li>
                     <li><a href="#">Assignment3</a></li>
                     <li><a href="#">Assignment4</a></li>
@@ -30,13 +30,13 @@
             </div>
             <div class="content">
                 <div>
-                    <button type="button" id="button1"><span></span><a href="../Assignment1/assignment1_1.html">METRIC BMR CALCULATOR</a></button>
-                    <button type="button" id="button2"><span></span><a href="../Assignment1/assignment1.html">BMR IMPERIAL CALCULATOR</a></button>   
+                    <button type="button" id="button1"><span></span><a href="../Assignment/assignment1_1.html">METRIC BMR CALCULATOR</a></button>
+                    <button type="button" id="button2"><span></span><a href="../Assignment/assignment1.html">BMR IMPERIAL CALCULATOR</a></button>   
                 </div>
                 <form action="">
                     <fieldset>
                         <p id="subText">
-                            METRIC BMR CALCULATOR
+                            BMR IMPERIAL CALAULATOR
                         </p><br><br>
                         <p style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gender:
                             <select id="gender" name="gender" required>
@@ -48,13 +48,14 @@
                         <p style="font-weight: bold;">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="Age">Age: <input type="Number" id="age" name="age" required/></label>
                         </p></br>
-                        <p style="font-weight: bold;">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="height">Height: <input type="Number" id="height" name="height" required/></label>
+                        <p style="font-weight: bold;">Your Height</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="feet">FEET: <input type="Number" id="feet" name="feet" required/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="inches">INCHES: <input type="Number" id="inches" name="inches" required/></label>
                         </p></br>
-                        <p style="font-weight: bold;">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="weight">Weight: <input type="Number" id="weight" name="weight" required/></label>
-                        </p></br>
-                        
+                        <p style="font-weight: bold;">Your Weight</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<label for="stones">STONES: <input type="Number" id="stones" name="stones" required/></label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<label for="pounds">POUNDS: <input type="Number" id="pounds" name="pounds" required/></label>
+                        </p></br></br>
                         <div id="selectLevel">
                             <p style="font-weight: bold;">select your activity level:</p><br>
                             &nbsp;<input type="radio" id="level1" name="level" value="1.2"><label for="level1">&nbsp;I am sedentary (little or no exercise)</label><br>
