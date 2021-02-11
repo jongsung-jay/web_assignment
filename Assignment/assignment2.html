@@ -4,9 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/assignment2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+   
+
+
     <title>Assignment2</title>
 </head>
-<body>
+<body class="body">
+    <div class="container">
+        <div class="navbar">
+            <div><p id="logo"><a href="../index.html">COMP125</a></p></div>
+            <ul>
+                <li><a href="Assignment/assignment1.html" target="blank" >Assignment1</a></li>
+                <li><a href="Assignment/assignment2.html">Assignment2</a></li>
+                <li><a href="#">Assignment3</a></li>
+                <li><a href="#">Assignment4</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="section-content">
+				<h1 class="section-header"> <span class="header-dw"> Drawing</span> your table</h1>	
+			</div>
+            <div>
+                <fieldset class="field">
+                    <legend><h3>&nbsp;&nbsp;Input and Click <b>TRANSLATE</b>&nbsp;&nbsp;</h3></legend>
+                    <div class="table">
+                        <div class="row">
+                            The number of rows: &nbsp;<input id="btnTd" type="number" value="1">
+                        </div>
+                        <div class="column">
+                            The number of columns: &nbsp;<input id="btnTd" type="number" value="1">
+                        </div>
+                    </div>                 
+                    <div class="cal">
+                        <button type="button"><span></span>Translate</button>
+                    </div>
+                    <div class="resultTable">
+
+                    </div>
+                </fieldset>
+            </div> 
+        </div>
+    <footer>
+        <h6>&reg; Copyright Centennial College COMP125 - Client-Side Web Development - Winter 2021 <br>
+            Jongsung, 301136370, COMP125005, Semester</h6>
+    </footer>
     <script src="../js/assignment2.js"></script>
 </body>
 </html>
