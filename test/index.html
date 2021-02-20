@@ -12,29 +12,30 @@
     <title>Part B</title>
 </head>
 <body>
+    <div class="container">
     <div class="banner">
         <div class="navbar">
             <div><p id="logo"><a href="index.html">COMP125</a></p></div>
             <ul>
-                <li><a href="#"  >Medterm Test</a></li>
+                <li><a href="#">Medterm Test</a></li>
             </ul>
         </div>
     </div>
     <div class="content">
-        <div class="fieldset">
+        <form action="" id="myForm" method="post">
             <fieldset id="field_a">
                 <div class="contentField">
                 <p>Billing Address</p>
                 <label for="fname">First name</label>
-                <input type="text" id="fname" name="fname" placeholder="Maria"><br>
+                <input type="text" id="txtfName" name="txtfName" placeholder="Maria"><br>
                 <label for="lname">Last name</label>
-                <input type="text" id="lname" name="lname" placeholder="Santiago"><br>
+                <input type="text" id="txtlname" name="txtlname" placeholder="Santiago"><br>
                 <label for="address">Street Address</label>
-                <input type="text" id="address" name="address" placeholder="1 Main St" size="30"><br>
+                <input type="text" id="txtaddress" name="txtaddress" placeholder="1 Main St" size="30"><br>
                 <label for="city">City</label>
-                <input type="text" id="city" name="city" placeholder="Las Cruces"><br>
+                <input type="text" id="txtcity" name="txtcity" placeholder="Las Cruces"><br>
                 <label for="state">State</label>
-                <select name="state" id="state">
+                <select name="txtstate" id="txtstate">
                     <option value="select">- select -</option>
                     <option value="AB">AB</option>
                     <option value="BC">BC</option>
@@ -51,27 +52,27 @@
                     <option value="YT">YT</option>
                 </select><br>
                 <label for="zip">Zip</label>
-                <input type="text" id="zip" name="zip" placeholder="12345" size="10"><br>
+                <input type="text" id="txtzip" name="txtzip" placeholder="12345" size="10"><br>
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                <input type="tel" id="txtphone" name="txtphone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
                 </div>
             </fieldset>
             <fieldset id="field_b">
                 <div class="contentField">
                 <p>Delivery Address</p>
                 <div class="sameCheck">
-                    <input type="checkbox" id="check" name="check">&nbsp;Same as billing address   
+                    <input type="checkbox" id="copy" name="copy" onclick="shipToBill(this.form);">&nbsp;Same as billing address   
                 </div>
                 <label for="fname">First name</label>
-                <input type="text" id="fname" name="fname" placeholder="Maria"><br>
+                <input type="text" id="deliveryfName" name="deliveryfName" placeholder="Maria"><br>
                 <label for="lname">Last name</label>
-                <input type="text" id="lname" name="lname" placeholder="Santiago"><br>
+                <input type="text" id="deliverylname" name="deliverylname" placeholder="Santiago"><br>
                 <label for="address">Street Address</label>
-                <input type="text" id="address" name="address" placeholder="1 Main St" size="30"><br>
+                <input type="text" id="deliveryaddress" name="deliveryaddress" placeholder="1 Main St" size="30"><br>
                 <label for="city">City</label>
-                <input type="text" id="city" name="city" placeholder="Las Cruces"><br>
+                <input type="text" id="deliverycity" name="deliverycity" placeholder="Las Cruces"><br>
                 <label for="state">State</label>
-                <select name="state" id="state">
+                <select name="state" id="deliverystate">
                     <option value="select">- select -</option>
                     <option value="AB">AB</option>
                     <option value="BC">BC</option>
@@ -88,22 +89,25 @@
                     <option value="YT">YT</option>
                 </select><br>
                 <label for="zip">Zip</label>
-                <input type="text" id="zip" name="zip" placeholder="12345" size="10"><br>
+                <input type="text" id="deliveryzip" name="deliveryzip" placeholder="12345" size="10"><br>
                 <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                <input type="tel" id="deliveryphone" name="deliveryphone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
                 </div>
             </fieldset>
-        </div>
-        <div class="img">
-            <img src="./delivery.jpg" alt="img">
-        </div>
-
+            <div>
+                <div id="form">
+                    <button type="reset">Reset</button>
+                    <button>Submit</button>
+                </div>
+            </div>
+        </form>
+        
     </div>
-    
+</div>
     <footer>
         <h6>&reg; Copyright Centennial College COMP125 - Client-Side Web Development - Winter 2021 <br>
             Jongsung, 301136370, COMP125005, Semester</h6>
     </footer>
-    
+    <script src="./index.js"></script>
 </body>
 </html>

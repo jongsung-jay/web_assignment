@@ -35,9 +35,11 @@ body{
 #logo a{
     font-family: 'Lobster', cursive;
     color: white;
-    font-size: 200%;
+    font-size: 100%;
     margin-left: 50px;
     cursor: pointer;
+    display: block;
+    margin-top: 10px;
 }
 .navbar ul li{
     list-style: none;
@@ -51,17 +53,17 @@ body{
     text-transform: uppercase;
 }
 .content{
-    width: 70%;
-    margin: 2% auto;
+    width: 50%;
+    margin: auto;
 }
-.fieldset{
-    float: left;
-    width: 55%;
-    margin: 0 0 0 30px;
+#myForm{
+    width: 100%;
+    margin: 10% 0 0 10px;
 }
 p{
     font-family: 'Dancing Script', cursive;
     font-size: 25px;
+    margin-bottom: 10px;
 }
 .contentField{
     margin: 20px 0 20px 10px;
@@ -83,14 +85,28 @@ label{
 .sameCheck{
     margin: 0 0 10px 10px;
 }
-img{
-    float: right;
-    width: 40%;
-    height: 520px;
+
+button{
+    width: 200px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 10px 0 20px 0px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 15px;
+} 
+
+/* validation */
+#firstName:invalid {
+    background: rgb(255,233,233);
 }
 
 footer{
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     padding : 5px 0 5px 0;
     background: #333333;
