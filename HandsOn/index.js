@@ -49,7 +49,7 @@ function customvalidity(){
 
     if(fname1.valueMissing || lname1.valueMissing || address1.valueMissing || city1.valueMissing || state1.valueMissing || zip1.valueMissing || phone1.valueMissing ||
         fname2.valueMissing || lname2.valueMissing || address2.valueMissing || city2.valueMissing || state2.valueMissing || zip2.valueMissing || phone2.valueMissing){
-        setCustomValidity("Please fill out this field.")
+        setCustomValidity("Please fill out this field.");
     }
 }
 

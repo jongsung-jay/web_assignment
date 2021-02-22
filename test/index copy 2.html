@@ -27,15 +27,15 @@
                 <div class="contentField">
                 <p>Billing Address</p>
                 <label for="fname">First name</label>
-                <input type="text" id="txtfName" name="formField" placeholder="Maria" required="required"><br>
+                <input type="text" id="txtfName" name="formField" placeholder="Maria"><br>
                 <label for="lname">Last name</label>
-                <input type="text" id="txtlname" name="formField" placeholder="Santiago" required="required"><br>
+                <input type="text" id="txtlname" name="formField" placeholder="Santiago"><br>
                 <label for="address">Street Address</label>
-                <input type="text" id="txtaddress" name="formField" placeholder="1 Main St" size="30" required="required"><br>
+                <input type="text" id="txtaddress" name="formField" placeholder="1 Main St" size="30"><br>
                 <label for="city">City</label>
-                <input type="text" id="txtcity" name="formField" placeholder="Las Cruces" required="required"><br>
+                <input type="text" id="txtcity" name="formField" placeholder="Las Cruces"><br>
                 <label for="state">State</label>
-                <select name="formField" id="txtstate" required="required">
+                <select name="formField" id="txtstate">
                     <option value="AB">AB</option>
                     <option value="BC">BC</option>
                     <option value="MB">MB</option>
@@ -51,27 +51,27 @@
                     <option value="YT">YT</option>
                 </select><br>
                 <label for="zip">Zip</label>
-                <input type="text" id="txtzip" name="formField" placeholder="12345" size="10" required="required"required="required"><br>
+                <input type="text" id="txtzip" name="formField" placeholder="12345" size="10"><br>
                 <label for="phone">Phone</label>
-                <input type="tel" id="txtphone" name="formField" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required"><br>
+                <input type="tel" id="txtphone" name="formField" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
                 </div>
             </fieldset>
             <fieldset id="field_b">
                 <div class="contentField">
                 <p>Delivery Address</p>
                 <div class="sameCheck">
-                    <input type="checkbox" id="sameCheck" name="copy">&nbsp;Same as billing address   
+                    <input type="checkbox" id="copy" name="copy" onclick="shipToBill(this.form);">&nbsp;Same as billing address   
                 </div>
                 <label for="fname">First name</label>
-                <input type="text" id="deliveryfName" name="formField" placeholder="Maria" required="required"><br>
+                <input type="text" id="deliveryfName" name="formField" placeholder="Maria"><br>
                 <label for="lname">Last name</label>
-                <input type="text" id="deliverylname" name="formField" placeholder="Santiago" required="required"><br>
+                <input type="text" id="deliverylname" name="formField" placeholder="Santiago"><br>
                 <label for="address">Street Address</label>
-                <input type="text" id="deliveryaddress" name="formField" placeholder="1 Main St" size="30" required="required"><br>
+                <input type="text" id="deliveryaddress" name="formField" placeholder="1 Main St" size="30"><br>
                 <label for="city">City</label>
-                <input type="text" id="deliverycity" name="formField" placeholder="Las Cruces" required="required"><br>
+                <input type="text" id="deliverycity" name="formField" placeholder="Las Cruces"><br>
                 <label for="state">State</label>
-                <select name="formField" id="deliverystate" required="required">
+                <select name="formField" id="deliverystate">
                     <option value="AB">AB</option>
                     <option value="BC">BC</option>
                     <option value="MB">MB</option>
@@ -87,9 +87,9 @@
                     <option value="YT">YT</option>
                 </select><br>
                 <label for="zip">Zip</label>
-                <input type="text" id="deliveryzip" name="formField" placeholder="12345" size="10" required="required"><br>
+                <input type="text" id="deliveryzip" name="formField" placeholder="12345" size="10"><br>
                 <label for="phone">Phone</label>
-                <input type="tel" id="deliveryphone" name="formField" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required"><br>
+                <input type="tel" id="deliveryphone" name="formField" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
                 </div>
             </fieldset>
             <div>

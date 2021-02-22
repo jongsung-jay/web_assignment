@@ -60,7 +60,7 @@ body{
 .navbar ul li:hover::after{
     width: 100%;
 }
-.headerText1{
+/* .headerText1{
     display: inline-block;
     font-family: 'Permanent Marker', cursive;
     color: greenyellow;
@@ -70,60 +70,102 @@ body{
     display: inline-block;
     color: greenyellow;
     font-family: 'Permanent Marker', cursive;
-}
-/* slider */
-.slider_wrapper{
-    position: relative;
-    width: 960px;
-    margin: 5% auto;
-    height: 300px;
-    overflow: hidden;
-}
-.slides{
-    position: absolute;
-    left: 0; top: 0;
-    transition: left 0.5s ease-out;
-}
-.slides li:not(:last-child){
-    float: left;
-    margin-right: 30px;
-}
-.slides img{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: fill;
-}
-.controls{
+} */
+/* page header */
+header {
+    color: white;
+    font-size: 20px;
     text-align: center;
-    margin-top: -30px;
-    cursor: pointer;
+    padding: 0.5em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+ }
+ 
+/* article */
+article {
+    position: relative;
+ }
+
+article h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    margin: 0 0 10px 51px;
 }
-.controls span{
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 0 10px;
+article div:hover {
+    cursor: default;
 }
-.controls span.prev{
-    right:calc(100% + 50px);
+/* image */
+figure {
+    position: absolute;
+    -webkit-box-shadow: 10px 0px 5px rgb(50, 50, 50),
+                       -10px 0px 5px rgb(50, 50, 50);
+    -moz-box-shadow:    10px 0px 5px rgb(50, 50, 50),
+                       -10px 0px 5px rgb(50, 50, 50);
+    box-shadow:         10px 0px 5px rgb(50, 50, 50),
+                       -10px 0px 5px rgb(50, 50, 50);
+ }
+#fig2 {
+    z-index: 10;
+    left: 13%;
+    top: 34px;
+ }
+ 
+#fig3 {
+    z-index: 20;
+    left: 50%;
+    margin-left: -240px;
+    top: 0;
 }
-.controls span.next{
-    left:calc(100% + 50px);
+ 
+#fig4 {
+    z-index: 10;
+    right: 13%;
+    top: 34px;
+}
+
+/* button */
+#prevBtn, #nextBtn {
+    /* background: #2fe90a; 
+    color: white; */
+    position: absolute;
+    z-index: 30;
+    text-align: center;
+    height: 135px;
+    width: 40px;
+    top: 67px;
+}
+#prevBtn {
+    left: 0;
+    margin-left: 70px;
+ }
+ 
+#nextBtn {
+    right: 0;
+    margin-right: 70px;
+}
+
+#prevBtn p, #nextBtn p {
+    position: relative;
+    top: 50%;
+    margin-top: -0.5em;
+    color: azure;
+    font-size: 50px;
 }
 
 /* Favorite team */
-.favText{
-    font-family: 'Reggae One', cursive;
+.favorite{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 290px;
     color: antiquewhite;
+    font-family: 'Reggae One', cursive;
     text-align: center;
-    font-size: 30px;
-    margin-top: 70px;
 }
 
 /* footer */
 footer{
-    /*    clear: both;*/
     position: absolute;
     bottom: 0;
     padding : 5px 0 5px 0;
