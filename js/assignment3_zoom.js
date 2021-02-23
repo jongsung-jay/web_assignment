@@ -1,14 +1,12 @@
-/* global variables */
-var photoOrderArray = window.opener.photoOrder; 
-var figFilename = "../img/images/IMG_0" + photoOrderArray[2] + ".jpg";
+var photoOrderArray = window.opener.photoOrder;
+var figFilename = "../images/IMG_0" + photoOrderArray[2] + ".jpg";
 
-function zoomFig() {
-	var zoomWindow = window.open("../Assignment/assignment3_zoom.html", "zoomwin", "width=960,height=600");
-	zoomWindow.focus();
+function closeWin() {
+    window.close();
 }
 
-function closeWin(){ 
-    window.close(); 
+function addFavorite() {
+    window.opener.AddFavorite();
 }
 
 function createEventListener() {
@@ -18,11 +16,17 @@ function createEventListener() {
     } else if (closeWindowDiv.attachEvent) {
         closeWindowDiv.attachEvent("onclick", closeWin);
     }
+    var addFavoriteDiv = document.getElementsByTagName("p")[1];
+    if (addFavoriteDiv.addEventListener) {
+        addFavoriteDiv.addEventListener("click", addFavorite, false);
+    } else if (addFavoriteDiv.attachEvent) {
+        addFavoriteDiv.attachEvent("onclick", addFavorite);
+    }
 }
 
 function pageSetup() {
-    document.getElementsByTagName("img")[0].src = figFilename; // assign filename to img element
+   document.getElementsByTagName("img")[0].src = figFilename; 
     createEventListener();
- }
- 
+}
+
 window.onload = pageSetup;
