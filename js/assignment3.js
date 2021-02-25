@@ -39,6 +39,7 @@ var AddFavorite = function () {
     }
 }
 
+
 function populateFigures() {
     var filename;
     var currentFig;
@@ -49,7 +50,7 @@ function populateFigures() {
     }
 }
 
-/* shift all images one figure to the left, and change values in photoOrder array to match  */
+// button
 function rightArrow() {
     for (var i = 0; i < 8; i++) {
         if ((photoOrder[i] + 1) === 9) {
@@ -61,7 +62,6 @@ function rightArrow() {
     }
 }
 
-/* shift all images one figure to the right, and change values in photoOrder array to match  */
 function leftArrow() {
     for (var i = 0; i < 8; i++) {
         if ((photoOrder[i] - 1) === 0) {

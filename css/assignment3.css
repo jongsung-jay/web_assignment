@@ -20,6 +20,9 @@ body{
    
 }
 /* header */
+#logo{
+   font-family: 'Lobster', cursive;
+}
 .navbar{
    width: 100%;
    margin: auto;
@@ -60,17 +63,6 @@ body{
 .navbar ul li:hover::after{
    width: 100%;
 }
-/* .headerText1{
-   display: inline-block;
-   font-family: 'Permanent Marker', cursive;
-   color: greenyellow;
-   font-size: 70px;
-}
-.headerText2{
-   display: inline-block;
-   color: greenyellow;
-   font-family: 'Permanent Marker', cursive;
-} */
 /* page header */
 header {
    color: white;
@@ -116,6 +108,7 @@ figure {
    left: 50%;
    margin-left: -240px;
    top: 0;
+   cursor: pointer;
 }
 
 #fig4 {
@@ -138,11 +131,13 @@ figure {
 #leftarrow {
    left: 0;
    margin-left: 70px;
+   cursor: pointer;
 }
 
 #rightarrow {
    right: 0;
    margin-right: 70px;
+   cursor: pointer;
 }
 
 #leftarrow p, #rightarrow p {
@@ -167,8 +162,24 @@ figure {
 }
 #favorites{
    margin-top: 10px;
-   margin-left: 30%;
+   margin-left: 23%;
+   cursor: pointer;
 }
+button{
+   width: 80px;
+   padding: 10px 0;
+   text-align: center;
+   margin: 10px 0 20px 0px;
+   border-radius: 10px;
+   font-weight: bold;
+   border: 2px solid black;
+   color: red;
+   cursor: pointer;
+   overflow: hidden;
+   font-size: 15px;
+   margin-top: 50px;
+   
+} 
 
 /* footer */
 footer{
