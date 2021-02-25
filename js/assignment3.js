@@ -1,24 +1,12 @@
-/* global variables */
 var photoOrder = [1, 2, 3, 4, 5];
 var photoFavorite = [];
 
-function deleteButtonAndPicture()
-{    
-    photoFavorite.splice(photoFavorite.indexOf(this.previousSibling.id), 1)
-    this.parentNode.removeChild(this.previousSibling);
-    this.parentNode.removeChild(this)
-}
-
 function createDeleteButton()
 {
-    var myButton = document.createElement("button");
-    myButton.innerText = "Delete?"
-    if (myButton.addEventListener) {
-        myButton.addEventListener("click", deleteButtonAndPicture, false);
-    } else if (myButton.attachEvent) {
-        myButton.attachEvent("onclick", deleteButtonAndPicture);
+    var myButton = confirm("Do you want to delete your image? \n** You cannot add images that you deleted once again.**");
+    if(myButton == true){
+        $("img:last").remove();
     }
-    this.parentNode.appendChild(myButton);
 }
 
 var AddFavorite = function () {
@@ -94,21 +82,24 @@ function createEventListeners() {
     }
 }
 
-/* open center figure in separate window */
 function zoomFig() {
     window.name = "parentForm";
-    let winOptions = "width=960, height=600,";
+    var propertyWidth = 960;
+    var propertyHeight = 600;
+    var winLeft = (screen.width - propertyWidth) / 2;
+    var winTop = (screen.height - propertyHeight) / 2;
+    var winOptions = "width=960, height=600,";
+    winOptions += ",left=" + winLeft;
+    winOptions += ",top=" + winTop;
     let zoom = window.open("../Assignment/assignment3_zoom.html", "childForm", winOptions);
     zoom.focus();
 }
 
-/* create event listeners and populate image elements */
 function setUpPage() {
     createEventListeners();
     populateFigures();
 }
 
-/* run setUpPage() function when page finishes loading */
 if (window.addEventListener) {
     window.addEventListener("load", setUpPage, false);
 } else if (window.attachEvent) {
