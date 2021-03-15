@@ -1,0 +1,129 @@
+a{
+    text-decoration: none; 
+    color: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    max-height: 100%;
+    /* height: 100%; */
+    /* margin: 0; */
+    margin-bottom: auto;
+    background: linear-gradient(to top, #9E768F,#9FA4C4);
+}
+.container{
+    width: 70%; 
+    max-height: 100%; 
+    /* height: 100vh; */
+    background-color: whitesmoke;
+    margin: 0 auto;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 10px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #009688;
+}
+#logo a{
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 200%;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    /* width: 0; */
+    background: wheat;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    margin: 50px 70px 50px 70px;
+}
+fieldset{
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#subText{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 40px;
+}
+#subText1{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 30px;
+}
+p{
+    font-weight: bold;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+tr{
+    height: 25px;
+}
+th{
+    text-align: left;
+    width: 120px;
+}
+
+.btnL{
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+    margin-left: 50px;
+    width: 250px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 35px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+.btn:hover{
+    background-color: #009688;
+    color: #fff;
+}
+footer{
+    padding : 5px 0 5px 0;
+    background: #009688;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
